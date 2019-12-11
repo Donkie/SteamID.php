@@ -235,7 +235,7 @@ class SteamID
 			case self::TypeInvalid:
 			case self::TypeIndividual:
 			{
-				$Universe = $this->GetAccountUniverse();
+				$Universe = 0;
 				$AccountID = $this->GetAccountID();
 				
 				return 'STEAM_' . $Universe . ':' . ( $AccountID & 1 ) . ':' . 
